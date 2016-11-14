@@ -17,7 +17,19 @@
 
 # Release 1: Design a Game
 # build a class
+
 # initiate word as null, length as 0, guesses as empty array, word_array as empty array (will be filled with underscores)
+class Game
+  def initialize
+    @word_to_guess = ""
+    @word_length = 0
+    @guess_hist = []
+    @word_array = []
+  end
+  def add(x,y)
+    x + y
+  end
+end
 # module - counts length of word, fills  word_array with underscores
 # module response - taunt and congrats
 
