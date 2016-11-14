@@ -21,16 +21,28 @@
 # initiate word as null, length as 0, guesses as empty array, word_array as empty array (will be filled with underscores)
 class Game
   def initialize
-    @word_to_guess = ""
+    @word_to_guess = "james"
     @word_length = 0
     @guess_hist = []
-    @word_array = []
+    @word_dashed = ""
   end
   def add(x,y)
     x + y
   end
-end
 # module - counts length of word, fills  word_array with underscores
+  def length_word
+    @word_length = @word_to_guess.length
+  end
+  def dashes  
+    @word_to_guess.length.times do |index|
+      @word_dashed << "-"
+      @word_dashed
+    end
+  end
+  
+end
+
+
 # module response - taunt and congrats
 
 # ask player for word

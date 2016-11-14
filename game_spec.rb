@@ -8,4 +8,8 @@ describe Game do
     expect(game.add(3,4)).to eq 7
   end
 
+  it "puts underscores in array" do
+    expect(game.dashes).to eq 5
+  end
+
 end
