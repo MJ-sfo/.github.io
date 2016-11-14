@@ -26,18 +26,17 @@ class Game
     @guess_hist = []
     @word_dashed = ""
   end
-  def add(x,y)
-    x + y
-  end
+
 # module - counts length of word, fills  word_array with underscores
   def length_word
     @word_length = @word_to_guess.length
   end
   def dashes  
-    @word_to_guess.length.times do |index|
-      @word_dashed << "-"
+    @word_length = @word_to_guess.length
+    @word_length.times do |index|
+      @word_dashed = @word_dashed +"-"
     end
-    puts @word_dashed     #for testing
+    @word_dashed     #for testing
   end
   
 end
