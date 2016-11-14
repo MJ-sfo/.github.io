@@ -36,12 +36,14 @@ class Game
   def dashes  
     @word_to_guess.length.times do |index|
       @word_dashed << "-"
-      @word_dashed
     end
+    puts @word_dashed     #for testing
   end
   
 end
-
+#testing
+test_game = Game.new.dashes
+puts "the number of dashes is #{test_game}"
 
 # module response - taunt and congrats
 
